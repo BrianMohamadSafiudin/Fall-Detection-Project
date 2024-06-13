@@ -1,12 +1,12 @@
 "use client"
 import type { NextPage } from "next";
 import { useCallback, useState, useEffect } from "react";
-import Sidebar from "../../components/templates/sidebar";
+import Sidebar from "../../components/templates/sidebar.tsx";
 import { useRouter } from "next/navigation";
-import Realtime1 from "../../components/organisms/realtime1";
+import Realtime1 from "../../components/organisms/realtime1.tsx";
 import mqtt, { MqttClient } from "mqtt"; // Import tipe MqttClient
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../firebaseConfig"; // Import konfigurasi Firebase
+import { db } from "../../firebaseconfig.js"; // Import konfigurasi Firebase
 
 
 const DIAGRAMFALLDETECTION: NextPage = () => {

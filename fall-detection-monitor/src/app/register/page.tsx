@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { db } from "../../firebaseConfig";
+import { db } from "../../firebaseconfig.js";
 import { collection, addDoc } from "firebase/firestore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form } from "react-bootstrap";

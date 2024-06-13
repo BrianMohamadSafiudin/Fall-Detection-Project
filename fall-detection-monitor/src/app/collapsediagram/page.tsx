@@ -1,12 +1,12 @@
 "use client";
 import type { NextPage } from "next";
 import { useCallback, useState, useEffect } from "react";
-import SideBar from "../../components/templates/side-bar";
+import SideBar from "../../components/templates/side-bar.tsx";
 import { useRouter } from "next/navigation";
-import Realtime from "../../components/organisms/realtime";
+import Realtime from "../../components/organisms/realtime.tsx";
 import mqtt, { MqttClient } from "mqtt"; // Import tipe MqttClient
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../../firebaseConfig"; // Import konfigurasi Firebase
+import { db } from "../../firebaseconfig.js"; // Import konfigurasi Firebase
 
 const COLLAPSEDIAGRAMFALLDETECTIO: NextPage = () => {
   const router = useRouter();

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form } from "react-bootstrap";
-import { db } from "../../firebaseConfig";
+import { db } from "../../firebaseconfig.js";
 
 const LOGINFORM = () => {
   const router = useRouter();
