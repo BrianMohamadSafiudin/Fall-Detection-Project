@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#555555</color>
+    <color name="ygrey">#F3F3F3</color>
+    <color name="merah">#FF0000</color>
+    <color name="indigo_200">#C5CAE9</color>
+    <color name="indigo_300">#9FA8DA</color>
+    <color name="select_color">#7986CB</color>
+    <color name="secondary">#5C6BC0</color>
+    <color name="primery">#3F51B5</color>
+
+    <color name="indigo_700">#3949AB</color>
+    <color name="indigo_800">#303F9F</color>
+    <color name="indigo_900">#283593</color>
+    <color name="indigo_A1000">#8C97FF</color>
+    <color name="indigo_2">#5161FF</color>
+    <color name="indigo_0">#3C4FFF</color>
+</resources>

@@ -1,0 +1,27 @@
+package com.kelompok4.deteksijatuh
+// HistoryAdapter.kt
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+class HistoryAdapter(private val historyList: List<String>) : RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val historyTextView: TextView = itemView.findViewById(R.id.textViewHistory)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_history, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.historyTextView.text = historyList[position]
+    }
+
+    override fun getItemCount(): Int {
+        return historyList.size
+    }
+}
