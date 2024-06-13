@@ -10,14 +10,7 @@ Proyek alat deteksi jatuh berbasis NodeMPU ESP8266 / ESP32
 - 2341728033 - Sufina
 
 
-# Link Figma
-
-dummy
-
-
-# Fitur Unggulan
-- dummy
-###### dummy
+![Screenshot Proyek](assets-report/falldetectionkelompok4.png)
 
 
 # License
