@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">falldetection</string>
+    <string name="google_cloud_project_id">00b4903a9768df2c135555e452edcca97600fc499093e850e94269b5bc9c35c8</string>
+    <string name="google_cloud_storage_bucket">kfall-dataset</string>
+    <string name="google_api_client_id">hasilprediksi.json</string>
+
+</resources>
