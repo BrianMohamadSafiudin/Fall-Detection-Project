@@ -2,8 +2,8 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
-import SideBar2 from "../../components/templates/side-bar2";
-import Realtime1 from "../../components/organisms/realtime1";
+import SideBar2 from "../../components/templates/side-bar2.tsx";
+import Realtime from "../../components/organisms/realtime11.tsx";
 
 
 const COLLAPSEMANAGEUSERADMIN: NextPage = () => {
@@ -99,6 +99,7 @@ const COLLAPSEMANAGEUSERADMIN: NextPage = () => {
               </div>
             </nav>
           </div>
+          <Realtime />
         </div>
       </section>
     </div>
