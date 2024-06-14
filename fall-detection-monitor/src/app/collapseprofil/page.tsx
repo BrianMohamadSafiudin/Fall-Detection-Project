@@ -2,9 +2,9 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
-import SideBar3 from "../../components//templates/side-bar3";
-import FrameComponent1 from "../../components/molecules/frame-component1";
-import InstansiLabel from "../../components/organisms/instansi-label";
+import SideBar3 from "../../components//templates/side-bar3.tsx";
+import FrameComponent1 from "../../components/molecules/frame-component1.tsx";
+import InstansiLabel from "../../components/organisms/instansi-label.tsx";
 
 const COLLAPSEPROFILEFALLDETECTIO: NextPage = () => {
   const router = useRouter();

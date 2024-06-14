@@ -1,9 +1,9 @@
 "use client";
 import type { NextPage } from "next";
 import { useCallback } from "react";
-import Sidebar2 from "@/components/templates/sidebar2";
+import Sidebar2 from "@/components/templates/sidebar2.tsx";
 import { useRouter } from "next/navigation";
-import DataHistoryKetinggianAir1 from "@/components/atoms/data-history-ketinggian-air1"
+import History from "@/components/atoms/history.tsx";
 
 const HISTORYFALLDETECTION: NextPage = () => {
   const router = useRouter();
@@ -27,7 +27,7 @@ const HISTORYFALLDETECTION: NextPage = () => {
                 <h2 className="m-0 relative text-inherit font-semibold font-inherit mq450:text-base">
                   HISTORY JATUH PENGGUNA
                 </h2>
-                <div className="relative text-lg">Sabtu, 30 Maret 2024</div>
+                <div className="relative text-lg">Jumat, 14 Juni 2024</div>
               </div>
             </div>
             <div className="w-[366px] flex flex-row items-start justify-start gap-[36px] max-w-full text-sm text-font-dis mq450:flex-wrap mq450:gap-[18px]">
@@ -101,7 +101,7 @@ const HISTORYFALLDETECTION: NextPage = () => {
               </nav>
             </div>
           </div>
-          <DataHistoryKetinggianAir1 />
+          <History />
         </div>
       </section>
     </div>

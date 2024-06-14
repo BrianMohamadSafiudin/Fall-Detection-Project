@@ -1,7 +1,24 @@
 import type { NextPage } from "next";
 import TableRow2 from "@/components/templates/table-row2";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebaseconfig.tsx";
+import React, { useEffect, useState } from 'react';
 
-const DataHistoryKetinggianAir1: NextPage = () => {
+
+const History: NextPage = () => {
+  const [fallhistorys, setUser] = useState([]);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const querySnapshot = await getDocs(collection(db, "fallhistorys"));
+      const usersList = querySnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+    };
+
+    fetchUsers();
+  }, []);
+}
+
+const History: NextPage = () => {
   return (
     <form className="m-0 self-stretch shadow-[-5px_8px_20px_rgba(87,_120,_131,_0.2)] rounded-3xs bg-white flex flex-col items-start justify-start pt-[22px] px-[22px] pb-[42px] box-border gap-[20px] max-w-full mq750:pt-5 mq750:pb-[27px] mq750:box-border">
       <div className="w-[1293px] h-[494px] relative shadow-[-5px_8px_20px_rgba(87,_120,_131,_0.2)] rounded-3xs bg-white hidden max-w-full" />
@@ -641,4 +658,4 @@ const DataHistoryKetinggianAir1: NextPage = () => {
   );
 };
 
-export default DataHistoryKetinggianAir1;
+export default History;

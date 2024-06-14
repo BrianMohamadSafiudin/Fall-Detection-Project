@@ -1,10 +1,10 @@
 "use client";
 import type { NextPage } from "next";
 import { useCallback } from "react";
-import Sidebar1 from "../../components/templates/sidebar1";
+import Sidebar1 from "../../components/templates/sidebar1.tsx";
 import { useRouter } from "next/navigation";
-import FrameComponent1 from "../../components/molecules/frame-component1";
-import FrameComponent from "../../components/molecules/frame-component";
+import FrameComponent1 from "../../components/molecules/frame-component1.tsx";
+import FrameComponent from "../../components/molecules/frame-component.tsx";
 
 const MANAGEPROFILEFALLDETECTION: NextPage = () => {
   const router = useRouter();

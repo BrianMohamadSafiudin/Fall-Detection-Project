@@ -2,9 +2,9 @@
 import type { NextPage } from "next";
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
-import SideBar1 from "@/components/templates/side-bar1";
+import SideBar1 from "@/components/templates/side-bar1.tsx";
 import ShortestPaths from "@/components/templates/shortest-paths";
-import DataHistoryKetinggianAir from "@/components/atoms/data-history-ketinggian-air";
+import History from "@/components/atoms/history.tsx";
 
 const COLLAPSEHISTORYFALLDETECTIO: NextPage = () => {
   const router = useRouter();
@@ -29,7 +29,7 @@ const COLLAPSEHISTORYFALLDETECTIO: NextPage = () => {
             onNotifikasiContainerClick={onNotifikasiContainerClick}
             onLOGOUTContainerClick={onLOGOUTContainerClick}
           />
-          <DataHistoryKetinggianAir />
+          <History />
         </div>
       </section>
     </div>
